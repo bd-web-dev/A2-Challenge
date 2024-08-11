@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Shared Styles */
+.orange-text {
+  color: rgba(230, 83, 60, 1);
+}
+
+.orange-bg {
+  background-color: rgba(230, 83, 60, 1);
+}
+
+header {
+  background-image: linear-gradient(
+    180deg,
+    hsl(0deg 0% 7%) 0%,
+    hsl(344deg 0% 25%) 50%,
+    hsl(0deg 0% 47%) 100%
+  );
+}
+
+/* Navbar Styles */
+.nav-row {
+  padding-top: 60px;
+  max-width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 2.25rem;
+}
+
+.nav-menu {
+  cursor: pointer;
+  color: white;
+  /* Remove bullet points and added gap after flex */
+  list-style-type: none;
+  display: flex;
+  gap: 47px;
+  align-items: center;
+  /* Spacing for inner elements and border */
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+  /* Styles for child elements */
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.nav-home {
+  padding: 8px 20px;
+  border-radius: 46px;
+}
