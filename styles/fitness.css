@@ -397,3 +397,81 @@ form {
 .primary-btn:nth-child(4) {
   padding: 1rem 4.5rem;
 }
+
+.meet-team {
+  padding-top: 5.5rem;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-bottom: 5.5rem;
+}
+
+.meet-team-text {
+  max-width: 670px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 3.625rem;
+}
+
+.meet-team-text > h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 0.875rem;
+}
+
+.meet-team-text > p {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.meet-team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+}
+
+.team-card {
+  width: 327px;
+  height: 272px;
+  overflow: hidden;
+  border-radius: 18px;
+  position: relative;
+}
+
+.team-card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.team-member-details {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+.team-member-details > h1 {
+  font-weight: 900;
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+.team-member-details > h2 {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+}
