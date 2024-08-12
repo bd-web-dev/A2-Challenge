@@ -246,6 +246,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .extra-mile-left {
@@ -292,3 +293,107 @@ header {
   background-repeat: no-repeat;
   border-radius: 18px;
 } */
+
+.bmi-heading {
+  max-width: 670px;
+  margin: 0 auto;
+  margin-bottom: 5.5rem;
+}
+
+.bmi-heading > h1 {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.bmi-heading > p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.bmi-calc-container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: rgba(34, 34, 34, 1);
+}
+
+.bmi-calc {
+  color: rgba(255, 255, 255, 1);
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bmi-calc h1 {
+  font-weight: 900;
+  font-size: 1.75rem;
+  margin-bottom: 3.25rem;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 1rem;
+}
+
+.bmi-calc-right {
+  max-width: 577px;
+}
+
+.bmi-calc-right > h1 {
+  margin-bottom: 1rem;
+}
+
+.bmi-calc-right > p {
+  color: (255, 255, 255, 0.5);
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+input,
+select {
+  font: inherit;
+  padding: 13px 20px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.fifty-each {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.fifty-each input {
+  flex: 1;
+}
+
+.fifty-each select {
+  flex: 1;
+}
+
+.full-row select {
+  width: 100%;
+}
+
+form {
+  margin-bottom: 2rem;
+}
+
+.primary-btn:nth-child(4) {
+  padding: 1rem 4.5rem;
+}
