@@ -97,7 +97,7 @@ header {
   margin-bottom: 1.75rem;
 }
 
-.banner-btn {
+.primary-btn {
   color: rgba(255, 255, 255, 1);
   font-family: inherit;
   font-weight: 600;
@@ -107,11 +107,11 @@ header {
   border-radius: 42px;
 }
 
-.banner-btn:nth-child(1) {
+.primary-btn:nth-child(1) {
   margin-right: 1rem;
 }
 
-.banner-btn:nth-child(2) {
+.primary-btn:nth-child(2) {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 1);
 }
@@ -183,6 +183,7 @@ header {
 .habits {
   max-width: 1110px;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .habits-text {
@@ -235,3 +236,59 @@ header {
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.5);
 }
+
+.extra-mile {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(34, 34, 34, 1);
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.extra-mile-left {
+  max-width: 40%;
+}
+
+.extra-mile-left > h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 14px;
+}
+
+.extra-mile-left > p {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 34px;
+}
+
+.primary-btn:nth-child(3) {
+  padding: 1rem 4.5rem;
+}
+
+.extra-mile-right {
+  overflow: hidden;
+  max-width: 40%;
+  border-radius: 18px;
+}
+
+.extra-mile-right > img {
+  width: 100%;
+  object-fit: cover;
+  transform: scale(2.5) translateX(-13%) translateY(10%);
+}
+
+/* .extra-mile-right {
+  width: 40%;
+  height: 312px;
+  background-image: url("../images/run.jpg");
+  background-size: 300%;
+  background-position: 68% 33%;
+  background-repeat: no-repeat;
+  border-radius: 18px;
+} */
