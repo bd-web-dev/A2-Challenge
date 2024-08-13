@@ -151,7 +151,6 @@ header {
   padding: 1rem 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  width: max-content;
 }
 
 .workout > h1 {
@@ -178,7 +177,6 @@ header {
   padding: 1.25rem 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  width: max-content;
 }
 
 .tutorial-left {
