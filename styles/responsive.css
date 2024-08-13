@@ -1,0 +1,88 @@
+@media screen and (max-width: 576px) {
+  .nav-menu-wrapper {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .banner-left > h1 {
+    font-size: 2.25rem;
+  }
+  .banner-left .miama {
+    font-size: 4.5rem;
+  }
+  .banner-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .large-btn {
+    display: none;
+  }
+  .small-btn {
+    padding: 1rem 2.625rem;
+    display: block;
+  }
+  .banner-second-btn {
+    padding: 1rem 1.25rem;
+  }
+  .workout {
+    top: 5%;
+    left: 51%;
+  }
+  .workout > h1 {
+    font-size: 1.875rem;
+  }
+  .workout > p {
+    font-size: 0.625rem;
+  }
+  .tutorial {
+    padding: 0.625rem 0.75rem;
+    bottom: 33%;
+    right: 50%;
+    gap: 0.5rem;
+  }
+  .tutorial-right > h1 {
+    font-size: 1.125rem;
+  }
+  .tutorial-right > p {
+    font-size: 0.75rem;
+  }
+  .habits-grid {
+    grid-template-columns: 1fr;
+  }
+  .extra-mile {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .extra-mile-left {
+    max-width: 100%;
+  }
+  .extra-mile-right {
+    max-width: 100%;
+  }
+  .bmi-calc {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .bmi-calc-right {
+    max-width: 100%;
+  }
+  .meet-team-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-flex {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer-first-child {
+    width: 100%;
+  }
+  .footer-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

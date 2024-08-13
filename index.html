@@ -12,18 +12,24 @@
     />
     <link href="https://fonts.cdnfonts.com/css/miama" rel="stylesheet" />
     <link rel="stylesheet" href="styles/fitness.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
   </head>
   <body>
     <header>
       <div class="nav-row">
         <h1 class="orange-text nav-brand">Fitness</h1>
         <nav>
-          <ul class="nav-menu">
-            <li class="orange-bg nav-home"><a href="">Home</a></li>
-            <li><a href="">Service</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">About</a></li>
-          </ul>
+          <div class="nav-menu-wrapper">
+            <ul class="nav-menu">
+              <li class="orange-bg nav-home"><a href="">Home</a></li>
+              <li><a href="">Service</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">About</a></li>
+            </ul>
+          </div>
+          <div class="burger-menu">
+            <img src="images/menu-bar.png" alt="" />
+          </div>
         </nav>
       </div>
       <div class="banner">
@@ -34,8 +40,11 @@
             transformation stories to help you get fit and stay fit!
           </p>
           <div class="banner-buttons">
-            <button class="primary-btn orange-bg">Join Club Now!</button>
-            <button class="primary-btn">Download App</button>
+            <button class="primary-btn orange-bg large-btn">
+              Join Club Now!
+            </button>
+            <button class="primary-btn orange-bg small-btn">Join Now!</button>
+            <button class="primary-btn banner-second-btn">Download App</button>
           </div>
         </div>
         <div class="banner-right">
@@ -109,7 +118,7 @@
             regardless of income or access to a gym. With hundreds of
             professional workouts.
           </p>
-          <button class="primary-btn orange-bg">Join Now</button>
+          <button class="primary-btn orange-bg extra-mile-btn">Join Now</button>
         </div>
         <div class="extra-mile-right">
           <img src="images/run.jpg" alt="" />
@@ -190,7 +199,7 @@
                   </select>
                 </div>
               </form>
-              <button class="primary-btn orange-bg">Calculate</button>
+              <button class="primary-btn orange-bg bmi-btn">Calculate</button>
             </div>
           </div>
         </div>
@@ -251,8 +260,8 @@
     </main>
     <footer>
       <div class="footer-content">
-        <div class="footer-grid">
-          <div class="footer-first-col">
+        <div class="footer-flex">
+          <div class="footer-first-child">
             <h1 class="orange-text">Fitness</h1>
             <p>
               We believe fitness should be accessible to everyone, everywhere,
@@ -260,22 +269,24 @@
               professional workouts.
             </p>
           </div>
-          <div class="footer-col">
-            <h1>Get Started</h1>
-            <div class="footer-links">
-              <a href="">Service</a>
-              <a href="">Contact Us</a>
-              <a href="">Affiliate Program</a>
-              <a href="">About Us</a>
+          <div class="footer-grid">
+            <div class="footer-col">
+              <h1>Get Started</h1>
+              <div class="footer-links">
+                <a href="">Service</a>
+                <a href="">Contact Us</a>
+                <a href="">Affiliate Program</a>
+                <a href="">About Us</a>
+              </div>
             </div>
-          </div>
-          <div class="footer-col">
-            <h1>Choose From</h1>
-            <div class="footer-links">
-              <a href="">Fitness</a>
-              <a href="">Platform</a>
-              <a href="">Workout Library</a>
-              <a href="">App Design</a>
+            <div class="footer-col">
+              <h1>Choose From</h1>
+              <div class="footer-links">
+                <a href="">Fitness</a>
+                <a href="">Platform</a>
+                <a href="">Workout Library</a>
+                <a href="">App Design</a>
+              </div>
             </div>
           </div>
         </div>

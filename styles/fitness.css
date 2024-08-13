@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -30,10 +31,12 @@ header {
 /* Navbar Styles */
 .nav-row {
   padding-top: 60px;
+  width: 90vw;
   max-width: 1060px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 32px;
 }
 
@@ -69,11 +72,16 @@ header {
   border-radius: 46px;
 }
 
+.burger-menu {
+  display: none;
+}
+
 /* Banner Styles */
 .banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 90vw;
   max-width: 1110px;
   margin: 0 auto;
   /* Added padding-top to next section instead
@@ -91,12 +99,14 @@ header {
   color: rgba(255, 255, 255, 1);
   font-weight: 900;
   font-size: 4.875rem;
+  line-height: 120%;
   margin-bottom: 1.75rem;
 }
 
 .banner-left .miama {
   font-family: "Miama", sans-serif;
-  font-size: 78px;
+  font-weight: 400;
+  font-size: 150px;
 }
 
 .banner-left > p {
@@ -115,11 +125,15 @@ header {
   border-radius: 42px;
 }
 
-.primary-btn:nth-child(1) {
+.large-btn {
   margin-right: 1rem;
 }
 
-.primary-btn:nth-child(2) {
+.small-btn {
+  display: none;
+}
+
+.banner-second-btn {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 1);
 }
@@ -137,7 +151,7 @@ header {
   padding: 1rem 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  width: 130px;
+  width: max-content;
 }
 
 .workout > h1 {
@@ -157,14 +171,14 @@ header {
   bottom: 11%;
   right: 73%;
   display: flex;
-  justify-content: space-between;
+  gap: 0.75rem;
   align-items: center;
   background-color: rgba(48, 48, 48, 0.54);
   backdrop-filter: blur(20px);
   padding: 1.25rem 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  width: 160px;
+  width: max-content;
 }
 
 .tutorial-left {
@@ -189,6 +203,7 @@ header {
 }
 
 .habits {
+  width: 90vw;
   max-width: 1110px;
   margin: 0 auto;
   margin-bottom: 100px;
@@ -246,6 +261,7 @@ header {
 }
 
 .extra-mile {
+  width: 90vw;
   max-width: 1110px;
   margin: 0 auto;
   padding: 2rem;
@@ -276,7 +292,7 @@ header {
   margin-bottom: 34px;
 }
 
-.primary-btn:nth-child(3) {
+.extra-mile-btn {
   padding: 1rem 4.5rem;
 }
 
@@ -303,6 +319,7 @@ header {
 } */
 
 .bmi-heading {
+  width: 90vw;
   max-width: 670px;
   margin: 0 auto;
   margin-bottom: 5.5rem;
@@ -329,6 +346,7 @@ header {
 
 .bmi-calc {
   color: rgba(255, 255, 255, 1);
+  width: 90vw;
   max-width: 1110px;
   margin: 0 auto;
   display: flex;
@@ -355,7 +373,7 @@ td {
 }
 
 .bmi-calc-right {
-  max-width: 577px;
+  max-width: 50%;
 }
 
 .bmi-calc-right > h1 {
@@ -372,26 +390,19 @@ td {
 input,
 select {
   font: inherit;
-  padding: 13px 20px;
+  padding: 0.8125rem 1.25rem;
   color: rgba(255, 255, 255, 0.6);
   background-color: rgba(255, 255, 255, 0.1);
   outline: none;
   border: none;
   border-radius: 0.5rem;
+  width: calc((100% - 1rem) / 2);
 }
 
 .fifty-each {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
-}
-
-.fifty-each input {
-  flex: 1;
-}
-
-.fifty-each select {
-  flex: 1;
 }
 
 .full-row select {
@@ -402,12 +413,13 @@ form {
   margin-bottom: 2rem;
 }
 
-.primary-btn:nth-child(4) {
+.bmi-btn {
   padding: 1rem 4.5rem;
 }
 
 .meet-team {
   padding-top: 5.5rem;
+  width: 90vw;
   max-width: 1110px;
   margin: 0 auto;
   padding-bottom: 5.5rem;
@@ -444,7 +456,7 @@ form {
 }
 
 .team-card {
-  width: 327px;
+  width: 100%;
   height: 272px;
   overflow: hidden;
   border-radius: 18px;
@@ -491,28 +503,39 @@ footer {
 }
 
 .footer-content {
+  width: 90vw;
   max-width: 1110px;
   margin: 0 auto;
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 150px;
-  margin-bottom: 5rem;
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
 }
 
-.footer-first-col > h1 {
+.footer-first-child {
+  width: 45%;
+}
+
+.footer-first-child > h1 {
   font-weight: 800;
   font-style: italic;
   font-size: 4.375rem;
   margin-bottom: 1.25rem;
 }
 
-.footer-first-col > p {
+.footer-first-child > p {
   font-size: 0.875rem;
   line-height: 1.5rem;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-grid {
+  width: 45%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 150px;
+  margin-bottom: 5rem;
 }
 
 .footer-col {
