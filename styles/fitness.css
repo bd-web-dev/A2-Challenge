@@ -509,6 +509,72 @@ form {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.scroll-container {
+  width: 90vw;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.scroll-content-text > h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+.scroll-content-text {
+  margin-bottom: 2rem;
+}
+
+.infinite-scroll {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+.infinite-scroll::before,
+.infinite-scroll::after {
+  position: absolute;
+  top: 0;
+  width: 7vw;
+  height: 100%;
+  content: "";
+  z-index: 1;
+}
+
+.infinite-scroll::before {
+  left: 0;
+  background-image: linear-gradient(to left, transparent, black);
+}
+
+.infinite-scroll::after {
+  right: 0;
+  background-image: linear-gradient(to right, transparent, black);
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.infinite-scroll-inner {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0.5rem;
+  animation: 15s scroll infinite linear;
+}
+
+.tag-list {
+  list-style-type: none;
+}
+
+.tag-list img {
+  height: 100px;
+  border-radius: 0.5rem;
+}
+
 footer {
   padding-top: 4rem;
   padding-bottom: 2rem;
